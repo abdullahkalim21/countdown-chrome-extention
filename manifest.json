@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Countdown Tab",
+    "version": "1.0",
+    "description": "A motivational countdown tracker for your lifespan or goal deadline.",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+        "64": "icons/timer-64.png",
+        "128": "icons/timer-128.png"
+    }
+}
