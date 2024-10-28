@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #ffbd59;
+    --primary-hover-color: #ff9900;
+    --gray-color: #333333;
+    --white-color: #ffffff;
+}
+
+::selection {
+    background-color: var(--primary-hover-color);
+    color: var(--gray-color);
+}

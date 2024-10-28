@@ -1,13 +1,26 @@
 {
     "manifest_version": 3,
-    "name": "Countdown Tab",
+    "name": "Countdown Timer Extension",
     "version": "1.0",
-    "description": "A motivational countdown tracker for your lifespan or goal deadline.",
+    "description": "A motivational countdown tracker for your lifespan or goal deadline with customizable appearance.",
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
     "chrome_url_overrides": {
         "newtab": "index.html"
     },
-    "permissions": [
-        "storage"
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "selection.css"
+            ]
+        }
     ],
     "icons": {
         "64": "icons/timer-64.png",
